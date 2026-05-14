@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build lab2 (g++ + OpenMP)",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "main.cpp",
+                "-O2",
+                "-fopenmp",
+                "-o",
+                "main_omp.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
